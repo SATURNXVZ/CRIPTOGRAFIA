@@ -1,0 +1,18 @@
+JWT: é facil implementar algo em jwt, mas existe o recomendado, que é melhor ainda.
+é um padrão , em formato .json, sendo dividido em 3 partes;
+
+1 vermelha
+1 azul
+1 vermelha;
+
+Formato da portadora de credencial, por ser leve.
+
+PARTES DO JWT:
+HEADER (1): que se alguém interceptar o pacote e substituílo, ele pode substituir o PAYLOAD;
+
+PAYLOAD: 
+
+ASSINATURA (3): Se o conteúdo do JWT ser alterado, a assinatura barrará o pacote, a validação é usada pelo algoritmo indicada no HEADER;
+
+BASE 64: é de duas vias, recebe e manda, codifica e descodifica.
+Ele converte bit em texto, binário em texto, usando um conjunto de 26 letras maiúsculas, 26 letras maiúsculas, 0->9, /
