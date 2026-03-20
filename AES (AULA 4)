@@ -1,0 +1,25 @@
+Criptografia simétrica;
+
+Temos uma tela e campos, e nem todos podem ver o conteúdo, é de sigilo, aonde um campo é escondido;
+
+No banco é escondido esse campo, usando AES, depositando dentro de um BASE64;
+POr mais q seja seguro, posso deixar ainda mais;
+
+No front é aonde tem a pergunta de chave, se ele tem poderá ver, senão, não vai ver;
+
+Esta chave é em token, usando aqueles JWT;
+
+Entre os simétricos, é o mais usado;
+
+O segredo dos simétricos é derivação de chave, usaremos PBKDF2;
+Simétricos significa o que precisa de senhas pra ir e voltar;
+
+Após a derivação é criptografia e geração de texto cifrado;
+
+AES tem chaves de 128 bits até 256;
+
+Quanto mais aleatório a chave, mais aleatório será a PBKDF2;
+
+Nosso objetivo é dificultar, fazer com que a invasão seja lenta;
+
+
